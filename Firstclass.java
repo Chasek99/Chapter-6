@@ -19,6 +19,9 @@ public class Firstclass {
 	 */
 	public static void main(String[] args) 
 	{
+		
+		
+		
 	Scanner keyboard = new Scanner(System.in);	
 
 	String choiceYes;
@@ -65,15 +68,32 @@ public class Firstclass {
 										+ "\n To the north"
 										+ "\n Disregard the citizen and go south");
 	
-	 JFrame frame1 = new JFrame("InputDialog Example #1");
-
-	 String name1 = JOptionPane.showInputDialog(frame, "What way do you want to go?");
 	
-	Input.nextLine();
-	choiceNorth = 
-	choiceSouth = 
-	choiceWest = 
-												
+	
+	
+	
+	 int n = JOptionPane.showConfirmDialog(
+	            null,
+	            "Press Yes to go North? No to go west. ",
+	            "",
+	            JOptionPane.YES_NO_OPTION);
+
+	        if(n == JOptionPane.YES_OPTION)
+	        {
+	        	North.north();
+	        }
+	        if(n == JOptionPane.NO_OPTION)
+	        {
+	        	ChoiceWest.choiceWest();
+	        }
+	        else
+	        {
+	        	SouthChoice.Choicesouth();
+	        }
+	  
+		
+	
+													
 
 	
 	
